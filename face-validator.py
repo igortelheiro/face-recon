@@ -22,6 +22,9 @@ faces_cadastradas = carregar_faces_cadastradas(faces_cadastradas_dir)
 # Inicializa a webcam
 cap = cv2.VideoCapture(0)
 
+# Cria uma janela única para exibição
+cv2.namedWindow("Verificação de Rosto", cv2.WINDOW_NORMAL)
+
 while True:
     # Captura o quadro da webcam
     ret, frame = cap.read()
