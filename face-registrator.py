@@ -15,6 +15,9 @@ pasta_pessoa = criar_pasta_pessoa(nome_pessoa)
 # Inicializa a webcam
 cap = cv2.VideoCapture(0)
 
+# Cria uma janela única para exibição
+cv2.namedWindow("Coleta de Biometria Facial", cv2.WINDOW_NORMAL)
+
 # Carrega o classificador de Haar para detecção facial
 face_cascade = cv2.CascadeClassifier(cv2.data.haarcascades + 'haarcascade_frontalface_default.xml')
 
